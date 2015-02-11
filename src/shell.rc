@@ -146,4 +146,9 @@ END
 IDR_MAINFRAME           ICON                    "resources\\nw.ico"
 /////////////////////////////////////////////////////////////////////////////
 
-CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "nw.exe.manifest"
+//FOLLOWING CAUSES LINK ERRORS!!!!!
+//CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "nw.exe.manifest"
+/// ABOVE will cause errors:
+//   CVTRES : fatal error CVT1100: duplicate resource.  type:MANIFEST, name:1, language:0x0409
+//   LINK : fatal error LNK1123: failure during conversion to COFF: file invalid or corrupt
+// during the linking of nw.exe
