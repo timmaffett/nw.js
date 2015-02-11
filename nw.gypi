@@ -84,7 +84,7 @@
         '<(DEPTH)/chrome/browser/status_icons/status_tray.h',
         '<(DEPTH)/chrome/browser/ui/cocoa/custom_frame_view.h',
         '<(DEPTH)/chrome/browser/ui/cocoa/custom_frame_view.mm',
-        '<(DEPTH)/chrome/browser/ui/base_window.h',
+        '<(DEPTH)/ui/base/base_window.h',
         '<(DEPTH)/chrome/browser/ui/gtk/gtk_window_util.cc',
         '<(DEPTH)/chrome/browser/ui/gtk/gtk_window_util.h',
         '<(DEPTH)/chrome/browser/ui/views/status_icons/status_icon_win.cc',
