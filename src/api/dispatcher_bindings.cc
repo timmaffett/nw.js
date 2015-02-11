@@ -144,6 +144,11 @@ DispatcherBindings::GetNativeFunction(v8::Handle<v8::String> name) {
     return v8::FunctionTemplate::New(GetNSStringWithFixup);
   else if (name->Equals(v8::String::New("GetNSStringFWithFixup")))
     return v8::FunctionTemplate::New(GetNSStringFWithFixup);
+#else
+  else if (name->Equals(v8::String::New("GetNSStringWithFixup")))
+    return v8::FunctionTemplate::New();
+  else if (name->Equals(v8::String::New("GetNSStringFWithFixup")))
+    return v8::FunctionTemplate::New();
 #endif
 
   NOTREACHED() << "Trying to get an non-exist function in DispatcherBindings:"
